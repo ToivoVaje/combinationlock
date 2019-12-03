@@ -8,14 +8,14 @@ end
 def check_numbers(code)
 
 	numbers = '123456789'
-	puts "Now checking #{code}: "
+	#puts "Now checking #{code}: "
 
 	for x in numbers.chars
 		if code.count(x) < 1
-			puts "#{x} not found."
+			#puts "#{x} not found."
 			return false
 		elsif code.count(x) > 1 
-			puts "Too many #{x}."
+			#puts "Too many #{x}."
 			return false
 		end
 	end
@@ -27,7 +27,7 @@ for i in [*100..333] do
 	current = multiply(i)
 	if check_numbers(current) 
 		puts "** Found: #{current} **"
-		break
+		#break
 	end
   end
 #check_numbers(multiply(100))
